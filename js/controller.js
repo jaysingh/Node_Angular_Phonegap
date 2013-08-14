@@ -4,7 +4,7 @@ Site.config(function ($routeProvider) {
 	$routeProvider.
 	when('/', {
 		templateUrl: 'index.html',
-		controller: MainController controller. js ("Specification version"-- v)
+		controller: MainController
 	});
 });
 
