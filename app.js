@@ -14,7 +14,7 @@ app.use(app.router);
 });
 
 app.get('/api/messageservice', function (req, res){
-	res.end("hello world");
+	res.send("hello world");
 });
 
 app.listen(3000);
