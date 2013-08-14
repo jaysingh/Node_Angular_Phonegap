@@ -11,7 +11,6 @@ Site.config(function ($routeProvider) {
 function MainController($http) {
 
 	$http.get('http://localhost:3000/api/messageservice').success(function(data) {
-		$scope.idea = data;
-		console.log($scope.idea);
+		console.log(data);
 	});
 }
