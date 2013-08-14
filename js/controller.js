@@ -3,7 +3,7 @@ var Site = angular.module('Site', []);
 Site.config(function ($routeProvider) {
 	$routeProvider.
 	when('/', {
-		templateUrl: '../index.html',
+		templateUrl: 'index.html',
 		controller: MainController
 	});
 });
