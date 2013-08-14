@@ -10,7 +10,7 @@ app.set('view engine', 'jade');
 app.set('views', __dirname);
 app.use(express.bodyParser());
 app.use(express.methodOverride());
-app.use(express.static(path.join(__dirname, 'controller')));
+app.use(express.static(path.join(__dirname, 'js')));
 app.use(app.router);
 });
 
