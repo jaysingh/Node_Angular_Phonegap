@@ -6,7 +6,6 @@ var app = express();
 
 app.configure(function configureApp(){
 
-app.set('view engine', 'jade');
 app.set('views', __dirname);
 app.use(express.bodyParser());
 app.use(express.methodOverride());
@@ -15,7 +14,7 @@ app.use(app.router);
 });
 
 app.get('/api/messageservice', function (req, res){
-	res.send("hello world");
+	res.end("hello world");
 });
 
 app.listen(3000);
