@@ -9,7 +9,7 @@ app.configure(function configureApp(){
 app.set('views', __dirname);
 app.use(express.bodyParser());
 app.use(express.methodOverride());
-app.use(express.static(path.join(__dirname, 'js')));
+app.use(express.static(path.join(__dirname, '.')));
 app.use(app.router);
 });
 
